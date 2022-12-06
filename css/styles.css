@@ -1,0 +1,29 @@
+.row-header {
+    margin:0px auto;
+    padding:0px auto;
+}
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px; /*上右下左间距*/
+    border-bottom: 1px ridge ;  /*下划线*/
+    min-height: 400px;
+   
+}
+.footer{
+    background-color: rgb(136, 208, 239);
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: rgb(96, 161, 231);
+    color:rgb(239, 225, 193);
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px auto;
+    color: black;
+}
