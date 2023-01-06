@@ -240,6 +240,14 @@
                 <a class="carousel-control-next" href="#mycarousel" referrerpolicy="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                        <span class="fa fa-play"></span>
+                    </button>
+                </div>
             </div><!--carousel content end-->
         </div>
     </div>    
@@ -264,128 +272,54 @@
            
         </div>
     </div>
-<!--------------------------------------------------------------------------------------------------->
-<div class="row row-content align-items-center"><!--row，align-items-center  是bootstrap的， row-content是自己css的-->
-    <div class="col-12 col-sm-3">
-        <h3>This Month's Promotions</h3>
-    </div>
-    <div class="col-6 col-sm-7">
-        <div class="media"><!--pizza pics-->
-           
-            <div class="media-body">
-                <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span> <!--Badges: text animation--></h2>
-                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five 
-                    different salads, six enticing appetizers, six main entrees and five choicest desserts. 
-                    Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
-                   
-            </div>
-            
-            
+    <!--------------------------------------------------------------------------------------------------->
+    <div class="row row-content align-items-center"><!--row，align-items-center  是bootstrap的， row-content是自己css的-->
+        <div class="col-12 col-sm-3">
+            <h3>This Month's Promotions</h3>
         </div>
-       
-    </div>
-    <div class="col-6 col-sm">
-        <img class="floating-right img-thumbnail align-self-right order-sm-Last"
-                    src="img/buffet.png" alt="unthappizza">
-    </div>
-</div>
-<!--------------------------------------------------------------------------------------------------->
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last  col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm order-sm-first col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                         src="img/alberto.png" alt="alberto">
+        <div class="col-6 col-sm-7">
+            <div class="media"><!--pizza pics-->
+            
+                <div class="media-body">
+                    <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span> <!--Badges: text animation--></h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five 
+                        different salads, six enticing appetizers, six main entrees and five choicest desserts. 
+                        Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
                     
-                         <div class="media-body">
-                            <h2 class="mt-0">Alberto Somayya</h2>
-                            <h4 class="mt-0">Executive Chef</h4>
-                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with 
-                                a choice of five different salads, six enticing appetizers, six main 
-                                entrees and five choicest desserts. Free flowing bubbly and soft drinks. 
-                                All for just $19.99 per person</p>
-                        </div>
-                </div>           
-            </div>
-        </div>
-        <!-------------------------------------------Card-------------------------------------------------------->
-        <div class="row row-content align-items-center justify-content-center">
-            <div class="col-12 col-sm-8 col-lg-8"> 
-                <div class="card">
-                    
-                    <h2 class="card-header bg-primary text-white ">Reserve a Table</h2>
-                    <div class="card-body">
-                        <form class="form-group"id="reserve-form">
-                            
-                            <div class="form-group row">
-                                <label class="col-md-2 col-form-label " for="numberofguest">Number of Guest</label>
-                            
-                                <label class="form-check-inline">
-                                <input type="radio" class="form-check-input" name="number" value="1">
-                                    1
-                                </label>
-                                <label class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="number" value="2">
-                                    2
-                                </label>
-                                <label class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="number" value="3">
-                                    3
-                                </label>
-                                <label class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="number" value="4">
-                                    4
-                                </label>
-                                <label class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="number" value="5">
-                                    5
-                                </label>
-                                <label class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="number" value="6">
-                                    6
-                                </label>
-                            </div>
-                            <div class="form-grou row">
-                                <label class="col-md-2 col-lg-2 col-form-label" for="dateandtime">Date and Time</label>
-                                <div class="col-md-3 col-lg-3">
-                                    <input type="date" class="form-control" id="date" name="date"
-                                        placeholder="Date">
-                                </div>
-                                
-                                <div class="col-md-3 col-lg-3">
-                                    <input type="time" class="form-control" id="time" name="time"
-                                        placeholder="time">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group row">
-                                <div class="offset-md-2 col-md-10">
-                                <button type="submit" class="btn btn-primary">
-                                Reserve
-                                </button>
-                            </div>
-                    
-
-                           
-                        </form>
-                        <script>
-                            const reserveButton = document.getElementById('reserve-button');
-                            const reservationForm = document.getElementById('reserve-form');
-                          
-                            reserveButton.addEventListener('click', () => {
-                              reservationForm.scrollIntoView({ behavior: 'smooth' });
-                            });
-                          </script>
-                    </div>
                 </div>
+                
+                
             </div>
-            
+        
         </div>
-
+        <div class="col-6 col-sm">
+            <img class="floating-right img-thumbnail align-self-right order-sm-Last"
+                        src="img/buffet.png" alt="unthappizza">
+        </div>
     </div>
+    <!--------------------------------------------------------------------------------------------------->
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-4 order-sm-last  col-md-3">
+            <h3>Meet our Culinary Specialists</h3>
+        </div>
+        <div class="col col-sm order-sm-first col-md">
+            <div class="media">
+                <img class="d-flex mr-3 img-thumbnail align-self-center"
+                        src="img/alberto.png" alt="alberto">
+                
+                        <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4 class="mt-0">Executive Chef</h4>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with 
+                            a choice of five different salads, six enticing appetizers, six main 
+                            entrees and five choicest desserts. Free flowing bubbly and soft drinks. 
+                            All for just $19.99 per person</p>
+                    </div>
+            </div>           
+        </div>
     </div>
+       
+</div>
 <!--------------------------------------------------------------------------------------------------->
        
 <footer class="footer">
@@ -434,7 +368,19 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--><script>
+<script>//carousel is active and two buttons control the behavior of the carousel
+    $(document).ready(function() {
+        $('#mycarousel').carousel({ intervel: 2000});
+        $('#carousel-pause').click(function() {
+            $('#mycarousel').carousel('pause');
+        });
+        $('#carousel-play').click(function(){
+            $('#mycarousel').carousel('cycle');
+        });
+    });
+</script>
+
+<!--<script>
     //tooltip
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
